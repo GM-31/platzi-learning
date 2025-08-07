@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Precios de Productos</h1>
+        
+        <div class="form-container">
+            <div class="input-group">
+                <label for="costoMateriaPrima">Costo de la Materia Prima:</label>
+                <input type="number" id="costoMateriaPrima" step="0.01" placeholder="Ingrese el costo">
+            </div>
+
+            <div class="input-group">
+                <label for="margenGanancia">Margen de Ganancia (%):</label>
+                <input type="number" id="margenGanancia" step="0.01" placeholder="Ingrese el porcentaje">
+            </div>
+
+            <div class="input-group">
+                <label for="impuestos">Impuestos (%):</label>
+                <input type="number" id="impuestos" step="0.01" placeholder="Ingrese el porcentaje">
+            </div>
+
+            <div class="input-group">
+                <label for="cantidadVentas">Cantidad de Ventas Esperadas:</label>
+                <input type="number" id="cantidadVentas" placeholder="Ingrese la cantidad">
+            </div>
+
+            <button id="calcularBtn">Calcular</button>
+        </div>
+
+        <div class="resultados-container">
+            <h2>Resultados del Cálculo</h2>
+            <div class="resultados">
+                <p>Precio Final del Producto: <span id="precioFinal">$0.00</span></p>
+                <p>Ganancia por Unidad: <span id="gananciaUnidad">$0.00</span></p>
+                <p>Impuestos por Unidad: <span id="impuestosUnidad">$0.00</span></p>
+            </div>
+
+            <h2>Proyección de Ventas</h2>
+            <div class="resultados">
+                <p>Ganancia Total Esperada: <span id="gananciaTotal">$0.00</span></p>
+                <p>Cantidad de Ventas: <span id="ventasCantidad">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
